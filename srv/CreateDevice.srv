@@ -1,0 +1,16 @@
+string machine_id
+string port
+uint16 baudrate
+uint16 accel
+float64 x_max
+float64 y_max
+float64 z_max
+float32 default_speed
+float32 x_max_v
+float32 y_max_v
+float32 z_max_v
+uint16 x_steps
+uint16 y_steps
+uint16 z_steps
+---
+bool success
