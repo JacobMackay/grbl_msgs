@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(grbl_interfaces)
+project(grbl_msgs)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -20,6 +20,10 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "srv/SendGcodeCmd.srv"
+  "srv/SendGcodeFile.srv"
+  "srv/SetPose.srv"
+  "srv/Stop.srv"
   "srv/CreateDevice.srv"
 )
 
