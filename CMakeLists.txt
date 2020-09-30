@@ -17,14 +17,26 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "srv/SendGcodeCmd.srv"
-  "srv/SendGcodeFile.srv"
-  "srv/SetPose.srv"
+set(action_files
+  "action/SendGcodeCmd.action"
+)
+
+set(srv_files
   "srv/Stop.srv"
-  "srv/CreateDevice.srv"
+)
+
+set(msg_files
+  "msg/State.msg"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
+  ${action_files}
+  DEPENDENCIES std_msgs
 )
 
 if(BUILD_TESTING)
