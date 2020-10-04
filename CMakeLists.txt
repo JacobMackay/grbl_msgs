@@ -22,6 +22,7 @@ find_package(rosidl_default_generators REQUIRED)
 
 set(action_files
   "action/SendGcodeCmd.action"
+  "action/SendGcodeFile.action"
 )
 
 set(srv_files
