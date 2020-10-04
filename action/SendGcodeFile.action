@@ -1,4 +1,5 @@
-string machine_id
-string command
+string file_path
 ---
 bool success
+---
+string status
