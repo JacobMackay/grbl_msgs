@@ -2,4 +2,4 @@ string command
 ---
 bool success
 ---
-uint8 state
+string status
