@@ -1,4 +1,0 @@
-string machine_id
-string command
----
-bool success
