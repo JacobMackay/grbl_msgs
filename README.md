@@ -1,2 +1,2 @@
-# grbl_interfaces
-Interfaces for the grbl_ros package
+# grbl_msgs
+Messages, Services and Actions for interacting with a GRBL device
