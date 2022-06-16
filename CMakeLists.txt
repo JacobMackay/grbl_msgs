@@ -31,6 +31,7 @@ set(srv_files
   "srv/Home.srv"
   "srv/Unlock.srv"
   "srv/Flush.srv"
+  "srv/Cancel.srv"
 )
 
 set(msg_files
