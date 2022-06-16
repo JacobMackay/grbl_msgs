@@ -23,10 +23,14 @@ find_package(rosidl_default_generators REQUIRED)
 set(action_files
   "action/SendGcodeCmd.action"
   "action/SendGcodeFile.action"
+  "action/SendPose.action"
 )
 
 set(srv_files
   "srv/Stop.srv"
+  "srv/Home.srv"
+  "srv/Unlock.srv"
+  "srv/Flush.srv"
 )
 
 set(msg_files
